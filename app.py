@@ -70,9 +70,11 @@ if st.session_state.current_cashbook:
         balance = total_in - total_out
 
         st.markdown("---")
-        st.markdown(f"**Total In:** 🟢 ${total_in:,.2f}  
+        st.markdown(f"""
+**Total In:** 🟢 ${total_in:,.2f}  
 **Total Out:** 🔴 ${total_out:,.2f}  
-**Balance:** 💰 ${balance:,.2f}")
+**Balance:** 💰 ${balance:,.2f}
+""")
     else:
         st.info("No entries yet.")
 else:
